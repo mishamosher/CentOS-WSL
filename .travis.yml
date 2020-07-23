@@ -1,0 +1,21 @@
+if: tag IS present
+os: linux
+dist: bionic
+language: shell
+addons:
+  apt:
+    packages:
+      - qemu-utils
+script:
+  - chmod +x ./build.sh
+  - ./build.sh
+deploy:
+  provider: releases
+  edge: true
+  token:
+    secure: EekgmyJgs39xNpuJV3vpS+VPrLjupCsiXYTfJfOpKhDtyJfG1PkgRbW/wZ2kkJBNFZyThLoCqkVwaey0i8wd7uXlh5H84cHi7w/jIqGMuqtpjT0CRDNmfEK9nf2uitUPdBwwsyqQA0cHrGZlE6jYlkApID9++AWo6MFp1wlpOULXR0IwjQYl0A6PlplN4+BOV+7ayy7uhPdP93R2i6ySscwUct2zSHWuD9sibur6XIDcoXK0LsElLJ6qguNFzntR/5PvikcRhb1E9/KLkjKfvF7YphGFh/0Y3ruchZPx28wOxNXXrmkkxK6Rn9jDifNzcRgDIGrkngVy7jFMkR6WwFTuSWZSRCnRA/vp3ObEUNDtPF2yS7lvr/OAYNRpjA829DRmcbuGJJX/f5YViTXSroMKmKfr657heXtV0907wmFL0j1kn/JpJBhAUzhAen5SQfzDKeiqn5uEPbUzUxDEifOD6x37E+2Qb197fM5G6HIdcPJQ7gUkARH9aKegG7/SUhRyQz/jLEGVA641iVXnXWq3g22wgqaBS04ldLY+TPa13IDCrktXVKIhu4M2jz3VAFPsKQvcAdWykR2GAOxW0+KkRzJ5RFm1glZbxFpa1a3t41KlVsCeCPf7+VZ9sDoIj9ImNP8ZBXyfqYp6CCvrZ0Ixei2UFf0el7yO5YbMIfQ=
+  file: 'wsl/dist/*.zip'
+  on:
+    repo: mishamosher/CentOS-WSL
+    tags: true
+    all_branches: true
