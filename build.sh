@@ -17,7 +17,7 @@ LNCR_URL="https://github.com/yuk7/wsldl/releases/download/${LNCR_BLD}/${LNCR_ZIP
 
 # Waits until a file appears or disappears
 # - $1   File path to wait for its existence
-# - [$2] The string 'a' to wait until the file appears, or 'd' to wait until the file disappears
+# - [$2] The string 'a' (default) to wait until the file appears, or 'd' to wait until the file disappears
 # - [$3] Timeout in seconds
 waitFile() {
   local START=$(cut -d '.' -f 1 /proc/uptime)
