@@ -3,7 +3,7 @@
 # Environment variables for the CentOS cloud image
 ARCH="x86_64"
 OS_VER="7"
-ROOTFS_VER="2003"
+ROOTFS_VER="2009"
 ROOTFS_FN="CentOS-${OS_VER}-${ARCH}-GenericCloud-${ROOTFS_VER}.qcow2"
 ROOTFS_URL="http://cloud.centos.org/centos/${OS_VER}/images/${ROOTFS_FN}"
 
