@@ -2,9 +2,9 @@
 
 # Environment variables for the CentOS cloud image
 ARCH="x86_64"
-OS_VER="8"
-ROOTFS_VER="8.3.2011-20201204.2"
-ROOTFS_FN="CentOS-${OS_VER}-GenericCloud-${ROOTFS_VER}.${ARCH}.qcow2"
+OS_VER="8-stream"
+ROOTFS_VER="8-20201019.1"
+ROOTFS_FN="CentOS-Stream-GenericCloud-${ROOTFS_VER}.${ARCH}.qcow2"
 ROOTFS_URL="http://cloud.centos.org/centos/${OS_VER}/${ARCH}/images/${ROOTFS_FN}"
 
 # Environment variables for Yuk7's wsldl
