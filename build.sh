@@ -3,7 +3,7 @@
 # Environment variables for the CentOS cloud image
 ARCH="x86_64"
 OS_VER="8-stream"
-ROOTFS_VER="8-20201019.1"
+ROOTFS_VER="8-20210210.0"
 ROOTFS_FN="CentOS-Stream-GenericCloud-${ROOTFS_VER}.${ARCH}.qcow2"
 ROOTFS_URL="http://cloud.centos.org/centos/${OS_VER}/${ARCH}/images/${ROOTFS_FN}"
 
