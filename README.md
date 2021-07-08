@@ -1,6 +1,6 @@
 # CentOS WSL
 
-Same as [CentWSL](https://github.com/wsldl-pg/CentWSL), but based on CentOS QCOW2 images.
+[CentOS](https://www.centos.org/) QCOW2 cloud images converted to RootFS for [WSL](https://docs.microsoft.com/en-us/windows/wsl/).
 
 ## Current releases:
  - [CentOS 8-stream](https://github.com/mishamosher/CentOS-WSL/releases/tag/8-stream-20210603)
