@@ -20,16 +20,19 @@ LNCR_URL="https://github.com/yuk7/wsldl/releases/download/${LNCR_BLD}/${LNCR_ZIP
 # - [$2] The string 'a' (default) to wait until the file appears, or 'd' to wait until the file disappears
 # - [$3] Timeout in seconds
 waitFile() {
-  local START=$(cut -d '.' -f 1 /proc/uptime)
+  local START
+  START=$(cut -d '.' -f 1 /proc/uptime)
   local MODE=${2:-"a"}
   until [[ "${MODE}" = "a" && -e "$1" ]] || [[ "${MODE}" = "d" && ( ! -e "$1" ) ]]; do
     sleep 1s
     if [ -n "$3" ]; then
-      local NOW=$(cut -d '.' -f 1 /proc/uptime)
+      local NOW
+      NOW=$(cut -d '.' -f 1 /proc/uptime)
       local ELAPSED=$(( NOW - START ))
       if [ $ELAPSED -ge "$3" ]; then break; fi
     fi
   done
+  sleep 2s
 }
 
 # Create a work dir
