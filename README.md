@@ -1,2 +1,6 @@
 # CentOS WSL
-Same as [CentWSL](https://github.com/wsldl-pg/CentWSL), but based on CentOS QCOW2 images.
+
+[CentOS](https://www.centos.org/) QCOW2 cloud images converted to RootFS for [WSL](https://docs.microsoft.com/en-us/windows/wsl/).
+
+## Main branch:
+- [CentOS WSL](https://github.com/mishamosher/CentOS-WSL)
