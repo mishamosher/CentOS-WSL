@@ -8,7 +8,7 @@ ROOTFS_FN="CentOS-${OS_VER}-${ARCH}-GenericCloud-${ROOTFS_VER}.qcow2"
 ROOTFS_URL="http://cloud.centos.org/centos/${OS_VER}/images/${ROOTFS_FN}"
 
 # Environment variables for Yuk7's wsldl
-LNCR_BLD="20112500"
+LNCR_BLD="21062500"
 LNCR_ZIP="icons.zip"
 LNCR_NAME="CentOS"
 LNCR_FN=${LNCR_NAME}.exe
