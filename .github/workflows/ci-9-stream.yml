@@ -2,11 +2,23 @@ name: CI 9-stream
 
 on:
   workflow_dispatch:
+  push:
+    tags:
+      - '*'
 
 jobs:
-  always_job:
-    name: Always run job
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Always run
-        run: echo "Dummy GitHub action that always runs and succeeds."
+      - name: Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install qemu-utils
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          chmod +x ./build.sh
+          ./build.sh
