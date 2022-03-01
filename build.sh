@@ -2,13 +2,13 @@
 
 # Environment variables for the CentOS cloud image
 ARCH="x86_64"
-OS_VER="8-stream"
-ROOTFS_VER="8-20210603.0"
+OS_VER="9-stream"
+ROOTFS_VER="9-20220224.0"
 ROOTFS_FN="CentOS-Stream-GenericCloud-${ROOTFS_VER}.${ARCH}.qcow2"
 ROOTFS_URL="http://cloud.centos.org/centos/${OS_VER}/${ARCH}/images/${ROOTFS_FN}"
 
 # Environment variables for Yuk7's wsldl
-LNCR_BLD="21062500"
+LNCR_BLD="22020900"
 LNCR_ZIP="icons.zip"
 LNCR_NAME="CentOS"
 LNCR_FN=${LNCR_NAME}.exe
