@@ -1,0 +1,12 @@
+name: CI 9-stream
+
+on:
+  workflow_dispatch:
+
+jobs:
+  always_job:
+    name: Always run job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Always run
+        run: echo "Dummy GitHub action that always runs and succeeds."
