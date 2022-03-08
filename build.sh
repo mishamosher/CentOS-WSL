@@ -5,7 +5,7 @@ ARCH="x86_64"
 OS_VER="8"
 ROOTFS_VER="8.4.2105-20210603.0"
 ROOTFS_FN="CentOS-${OS_VER}-GenericCloud-${ROOTFS_VER}.${ARCH}.qcow2"
-ROOTFS_URL="http://cloud.centos.org/centos/${OS_VER}/${ARCH}/images/${ROOTFS_FN}"
+ROOTFS_URL="https://cloud.centos.org/centos/${OS_VER}/${ARCH}/images/${ROOTFS_FN}"
 
 # Environment variables for Yuk7's wsldl
 LNCR_BLD="21062500"
